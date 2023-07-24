@@ -31,3 +31,32 @@ body {
 .main-page-description {
   font-size: 20px;
 }
+
+.main-page-navbar {
+  font-size: 18px;
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 0;
+  width: 200px;
+  position: absolute;
+  bottom: 80px;
+}
+
+.main-page-navbar li a {
+  display: block;
+  color: #000;
+  padding: 8px 0px;
+  text-decoration: none;
+}
+
+.main-page-navbar li a:hover {
+  font-weight: bold;
+}
+
+.main-page-container-content {
+  position: absolute;
+  bottom: 80px;
+  right: 80px;
+  width: 50vw;
+  height: 80vh;
+}
