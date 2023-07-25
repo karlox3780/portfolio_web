@@ -5,11 +5,13 @@
 @font-face {
   font-family: Neue Montreal;
   src: url(../asset/fonts/NeueMontreal/NeueMontreal-Light.otf);
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: Neue Montreal Bold;
+  font-family: Neue Montreal;
   src: url(../asset/fonts/NeueMontreal/NeueMontreal-Bold.otf);
+  font-weight: bold;
 }
 
 :root {
@@ -55,7 +57,15 @@ body {
 }
 
 .main-page-navbar li a:hover {
-  font-family: "Neue Montreal Bold";
+  font-weight: bold;
+}
+
+.navbar-active {
+  font-weight: bold;
+}
+
+.navbar-nonactive {
+  font-weight: normal;
 }
 
 .main-page-container-content {
