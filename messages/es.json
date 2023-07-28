@@ -1,3 +1,5 @@
 {
-    "MENU_PROJECTS": "Proyectos"
+    "Navigation": {
+        "MENU_PROJECTS": "Proyectos"
+    }
 }
