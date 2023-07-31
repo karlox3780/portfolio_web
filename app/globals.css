@@ -75,3 +75,16 @@ body {
   width: 50vw;
   height: 80vh;
 }
+
+/* Menu Lang */
+.menu-lang {
+  margin-bottom: 5px;
+}
+
+.menu-lang-title {
+  margin-right: 5px;
+}
+
+.menu-lang-link:nth-child(2) {
+  margin-right: 5px;
+}

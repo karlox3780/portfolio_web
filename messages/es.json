@@ -1,5 +1,10 @@
 {
+    "MenuLang": {
+        "TITLE": "IDIOMA:"
+    },
     "Navigation": {
-        "MENU_PROJECTS": "Proyectos"
+        "MENU_HOME": "Home",
+        "MENU_PROJECTS": "Proyectos",
+        "MENU_CONTACT": "Contacto"
     }
 }
