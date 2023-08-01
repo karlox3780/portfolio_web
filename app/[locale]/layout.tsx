@@ -2,8 +2,11 @@ import '../globals.css'
 
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { NextIntlClientProvider, useTranslations } from 'next-intl'
-import Navigation from '@/components/Navigation'
+import { NextIntlClientProvider } from 'next-intl'
+import Navigation from '@/app/components/Navigation'
+import { ThemeProvider } from './theme-provider'
+import { ThemeSwitcher } from '../components/ThemeSwitcher'
+import MenuLang from '../components/MenuLang'
 
 export const metadata: Metadata = {
   title: 'Carlos Bustos Portfolio'
@@ -29,16 +32,20 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body>
+      <body className='bg-slate-50 dark:bg-[#000000]'>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <main className="main-page-container border border-black">
-            <h1 className="main-page-title">Carlos Bustos</h1>
-            <p className="main-page-description">Front End Developer</p>
-            <Navigation></Navigation>
-          </main>
-          <div className="main-page-container-content">
-            {children}
-          </div>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <main className="main-page-container border border-black dark:border-white">
+              <h1 className="main-page-title">Carlos Bustos</h1>
+              <p className="main-page-description">Front End Developer</p>
+              <ThemeSwitcher />
+              <MenuLang />
+              <Navigation></Navigation>
+            </main>
+            <div className="main-page-container-content">
+              {children}
+            </div>
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html >

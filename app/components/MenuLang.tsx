@@ -13,7 +13,7 @@ export default function Navigation() {
 
     return (
         <div className="menu-lang">
-            <label className="menu-lang-title">{t("TITLE")}</label>
+            <p className="menu-lang-title text-base">{t("TITLE")}</p>
             <Link href={"/en" + currentRoute} className={locale === "en" ? activeStyle : nonActiveStyle} locale="en">EN</Link>
             <Link href={"/es" + currentRoute} className={locale === "es" ? activeStyle : nonActiveStyle} locale="es">ES</Link>
         </div>

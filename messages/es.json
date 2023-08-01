@@ -1,4 +1,9 @@
 {
+    "ThemeSwitcher": {
+        "CHANGE_THEME": "TEMA:",
+        "LIGHT": "Claro",
+        "DARK": "Oscuro"
+    },
     "MenuLang": {
         "TITLE": "IDIOMA:"
     },
