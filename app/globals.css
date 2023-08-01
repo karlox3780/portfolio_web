@@ -73,7 +73,7 @@ body {
   bottom: 80px;
   right: 80px;
   width: 50vw;
-  height: 80vh;
+  height: calc(100% - 160px);
 }
 
 /* Menu Lang Component*/
