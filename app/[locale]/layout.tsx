@@ -34,7 +34,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className='bg-slate-50 dark:bg-[#000000]'>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
             <main className="main-page-container border border-black dark:border-white">
               <h1 className="main-page-title">Carlos Bustos</h1>
               <p className="main-page-description">Front End Developer</p>
