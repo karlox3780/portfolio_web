@@ -10,7 +10,7 @@ export const ThemeSwitcher = () => {
     const t = useTranslations('ThemeSwitcher')
     const activeStyle = 'cursor-pointer mr-[5px] navbar-active'
     const nonActiveStyle = 'cursor-pointer mr-[5px] navbar-nonactive'
-    console.log(theme)
+
     useEffect(() => {
         setMounted(true);
     }, []);
