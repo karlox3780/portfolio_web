@@ -1,10 +1,8 @@
-/** @type {import('next').NextConfig} */
-
 const withNextIntl = require('next-intl/plugin')(
     './i18n.ts'
 );
 
-const nextConfig = {
+module.exports = withNextIntl({
     async redirects() {
         return [
             {
@@ -14,10 +12,4 @@ const nextConfig = {
             },
         ]
     }
-}
-module.exports = {
-    output: 'export'
-};
-module.exports = withNextIntl({
-    nextConfig
 });
