@@ -1,17 +1,21 @@
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 export default function Navigation() {
     const [navbar, setNavbar] = useState(false);
+    const t = useTranslations('Navigation')
+    const locale = useLocale()
+    const currentRoute = usePathname()
+    const activeStyle = 'navbar-active'
+    const nonActiveStyle = 'navbar-nonactive'
 
     return (
-        <nav className="w-full bg-gray-800 shadow">
-            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <nav className="w-fitmd:hidden">
+            <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <a href="#">
-                            <h2 className="text-2xl text-white font-bold">NEXT JS</h2>
-                        </a>
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -20,7 +24,7 @@ export default function Navigation() {
                                 {navbar ? (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-white"
+                                        className="w-6 h-6 text-black"
                                         viewBox="0 0 20 20"
                                         fill="currentColor"
                                     >
@@ -33,7 +37,7 @@ export default function Navigation() {
                                 ) : (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-white"
+                                        className="w-6 h-6 text-black"
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
@@ -51,31 +55,11 @@ export default function Navigation() {
                     </div>
                 </div>
                 <div>
-                    <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? 'block' : 'hidden'
-                            }`}
-                    >
-                        <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-white">
-                                <Link href="/">
-                                    Home
-                                </Link>
-                            </li>
-                            <li className="text-white">
-                                <Link href="/blogs">
-                                    Blogs
-                                </Link>
-                            </li>
-                            <li className="text-white">
-                                <Link href="/about">
-                                    About US
-                                </Link>
-                            </li>
-                            <li className="text-white">
-                                <Link href="/contact">
-                                    Contact US
-                                </Link>
-                            </li>
+                    <div>
+                        <ul className={`main-page-navbar ${navbar ? 'block' : 'hidden'}`}>
+                            <li><Link href={"/" + locale + "/home"} className={currentRoute?.includes("/home") ? activeStyle : nonActiveStyle}>{t("MENU_HOME")}</Link></li>
+                            <li><Link href={"/" + locale + "/projects"} className={currentRoute?.includes("/projects") ? activeStyle : nonActiveStyle}>{t("MENU_PROJECTS")}</Link></li>
+                            <li><Link href={"/" + locale + "/contact"} className={currentRoute?.includes("/contact") ? activeStyle : nonActiveStyle}>{t("MENU_CONTACT")}</Link></li>
                         </ul>
                     </div>
                 </div>
