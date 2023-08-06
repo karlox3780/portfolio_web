@@ -7,6 +7,7 @@ import Navigation from '@/app/components/Navigation'
 import { ThemeProvider } from './theme-provider'
 import { ThemeSwitcher } from '../components/ThemeSwitcher'
 import MenuLang from '../components/MenuLang'
+import MenuResponsive from '../components/MenuResponsive'
 
 export const metadata: Metadata = {
   title: 'Carlos Bustos Portfolio'
@@ -38,9 +39,12 @@ export default async function LocaleLayout({
             <main className="main-page-container border border-black dark:border-white">
               <h1 className="main-page-title">Carlos Bustos</h1>
               <p className="main-page-description">Front End Developer</p>
-              <ThemeSwitcher />
-              <MenuLang />
-              <Navigation></Navigation>
+              <div className='md:block max-md:hidden'>
+                <ThemeSwitcher />
+                <MenuLang />
+                <Navigation></Navigation>
+              </div>
+              <MenuResponsive></MenuResponsive>
             </main>
             <div className="main-page-container-content">
               {children}

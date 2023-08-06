@@ -12,7 +12,7 @@ export default function Navigation() {
     const nonActiveStyle = 'menu-lang-link navbar-nonactive'
 
     return (
-        <div className="menu-lang">
+        <div className="menu-lang flex items-baseline">
             <p className="menu-lang-title text-base">{t("TITLE")}</p>
             <Link href={"/en" + currentRoute} className={locale === "en" ? activeStyle : nonActiveStyle} locale="en">EN</Link>
             <Link href={"/es" + currentRoute} className={locale === "es" ? activeStyle : nonActiveStyle} locale="es">ES</Link>

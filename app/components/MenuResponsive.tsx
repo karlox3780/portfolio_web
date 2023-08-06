@@ -1,7 +1,11 @@
+'use client'
+
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { ThemeSwitcher } from './ThemeSwitcher';
+import MenuLang from './MenuLang';
 
 export default function Navigation() {
     const [navbar, setNavbar] = useState(false);
@@ -12,13 +16,13 @@ export default function Navigation() {
     const nonActiveStyle = 'navbar-nonactive'
 
     return (
-        <nav className="w-fitmd:hidden">
+        <nav className="w-fit md:hidden">
             <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                className="p-2 text-gray-700 outline-none border border-black"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
@@ -57,6 +61,8 @@ export default function Navigation() {
                 <div>
                     <div>
                         <ul className={`main-page-navbar ${navbar ? 'block' : 'hidden'}`}>
+                            <li><ThemeSwitcher /></li>
+                            <li><MenuLang /></li>
                             <li><Link href={"/" + locale + "/home"} className={currentRoute?.includes("/home") ? activeStyle : nonActiveStyle}>{t("MENU_HOME")}</Link></li>
                             <li><Link href={"/" + locale + "/projects"} className={currentRoute?.includes("/projects") ? activeStyle : nonActiveStyle}>{t("MENU_PROJECTS")}</Link></li>
                             <li><Link href={"/" + locale + "/contact"} className={currentRoute?.includes("/contact") ? activeStyle : nonActiveStyle}>{t("MENU_CONTACT")}</Link></li>
