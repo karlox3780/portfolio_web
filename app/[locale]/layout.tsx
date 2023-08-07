@@ -36,7 +36,7 @@ export default async function LocaleLayout({
       <body className='bg-slate-50 dark:bg-[#000000]'>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-            <main className="main-page-container border border-black dark:border-white">
+            <main className="main-page-container border border-black dark:border-white m-[40px] p-[40px]">
               <h1 className="main-page-title">Carlos Bustos</h1>
               <p className="main-page-description">Front End Developer</p>
               <div className='md:block max-md:hidden'>
@@ -44,14 +44,15 @@ export default async function LocaleLayout({
                 <MenuLang />
                 <Navigation></Navigation>
               </div>
+              <div className="main-page-container-content absolute bottom-[80px] right-[80px] w-[50vw] max-md:static">
+                {children}
+              </div>
               <MenuResponsive></MenuResponsive>
             </main>
-            <div className="main-page-container-content">
-              {children}
-            </div>
+
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
-    </html >
+    </html>
   );
 }

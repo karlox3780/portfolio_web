@@ -16,19 +16,19 @@ export default function Navigation() {
     const nonActiveStyle = 'navbar-nonactive'
 
     return (
-        <nav className="w-fit md:hidden">
+        <nav className="w-fit md:hidden fixed bottom-[40px]">
             <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                    <div className="flex items-center justify-between md:block">
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-gray-700 outline-none border border-black"
+                                className="p-2 text-gray-700 outline-none border border-black dark:border-white"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-black"
+                                        className="w-6 h-6 text-black dark:text-white"
                                         viewBox="0 0 20 20"
                                         fill="currentColor"
                                     >
@@ -41,7 +41,7 @@ export default function Navigation() {
                                 ) : (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        className="w-6 h-6 text-black"
+                                        className="w-6 h-6 text-black dark:text-white"
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
@@ -60,7 +60,7 @@ export default function Navigation() {
                 </div>
                 <div>
                     <div>
-                        <ul className={`main-page-navbar ${navbar ? 'block' : 'hidden'}`}>
+                        <ul className={`main-page-navbar ${navbar ? 'block' : 'hidden'} border border-black bg-white dark:bg-black dark:border-white`}>
                             <li><ThemeSwitcher /></li>
                             <li><MenuLang /></li>
                             <li><Link href={"/" + locale + "/home"} className={currentRoute?.includes("/home") ? activeStyle : nonActiveStyle}>{t("MENU_HOME")}</Link></li>
