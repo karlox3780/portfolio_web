@@ -44,7 +44,7 @@ export default async function LocaleLayout({
                 <MenuLang />
                 <Navigation></Navigation>
               </div>
-              <div className="main-page-container-content absolute bottom-[80px] right-[80px] w-[50vw] max-md:static">
+              <div className="main-page-container-content absolute bottom-[80px] right-[80px] w-[50vw] max-md:static max-md:w-[100%]">
                 {children}
               </div>
               <MenuResponsive></MenuResponsive>

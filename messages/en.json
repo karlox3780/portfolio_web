@@ -1,4 +1,13 @@
 {
+    "HomePage": {
+        "ParagraphLine1": "Born in 1993",
+        "ParagraphLine2": "in Salamanca, Spain.",
+        "ParagraphLine3": "My passion is",
+        "ParagraphLine4": "web design.",
+        "ParagraphLine5": "Non-stop learning",
+        "ParagraphLine6": "new technologies",
+        "ParagraphLine7": "and concepts."
+    },
     "ThemeSwitcher": {
         "CHANGE_THEME": "THEME:",
         "LIGHT": "Light",
