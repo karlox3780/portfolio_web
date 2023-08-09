@@ -8,6 +8,10 @@
         "ParagraphLine6": "nuevas tecnologías",
         "ParagraphLine7": "y conceptos."
     },
+    "AboutPage": {
+        "ParagraphLine1": "Soy un desarrollador web FullStack con un grado superior de DAM (Desarrollo de Aplicaciones Multiplataforma), con casi 4 años de experiencia en el desarrollo FrontEnd de páginas web.",
+        "ParagraphLine2": "Desarrollar páginas web sin el uso de frameworks o librerías, ha hecho que me de cuenta, que necesito aprender el uso de dichas herramientas. Ahora tengo la necesidad de mejorar el uso de ReactJs, además de aprender frameworks como NextJs, AngularJs o VueJs."
+    },
     "ThemeSwitcher": {
         "CHANGE_THEME": "TEMA:",
         "LIGHT": "Claro",
@@ -19,6 +23,6 @@
     "Navigation": {
         "MENU_HOME": "Home",
         "MENU_PROJECTS": "Proyectos",
-        "MENU_CONTACT": "Contacto"
+        "MENU_ABOUT": "Sobre mí"
     }
 }

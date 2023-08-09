@@ -1,8 +1,7 @@
 export default function SocialButtons() {
-
     return (
         <div className="flex mt-[5px] max-md:mb-[5px]">
-            <a className="block w-[30px] mr-[5px]" href="https://www.linkedin.com/in/carlosbustosramiro/">
+            <a className="block w-[30px] mr-[5px] hover:scale-110 duration-200" href="https://github.com/karlox3780" target="_blank">
                 <svg className="fill-black dark:fill-white" viewBox="-143 145 512 512">
                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -14,7 +13,7 @@ export default function SocialButtons() {
                     </g>
                 </svg>
             </a>
-            <a className="block w-[30px] mr-[5px]" href="https://www.linkedin.com/in/carlosbustosramiro/">
+            <a className="block w-[30px] mr-[5px] hover:scale-110 duration-200" href="https://www.linkedin.com/in/carlosbustosramiro/" target="_blank">
                 <svg className="fill-black dark:fill-white" viewBox="-143 145 512 512">
                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -24,7 +23,7 @@ export default function SocialButtons() {
                     </g>
                 </svg>
             </a>
-            <a className="block w-[30px]" href="mailto:carlosbustosramiro@gmail.com">
+            <a className="block w-[30px] hover:scale-110 duration-200" href="mailto:carlosbustosramiro@gmail.com" target="_blank">
                 <svg className="fill-black dark:fill-white" viewBox="0 0 512.00 512.00">
                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g id="SVGRepo_tracerCarrier"></g>

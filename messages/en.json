@@ -8,6 +8,10 @@
         "ParagraphLine6": "new technologies",
         "ParagraphLine7": "and concepts."
     },
+    "AboutPage": {
+        "ParagraphLine1": "I am a FullStack web developer with a higher degree of DAM (Cross Platform Application Development), with almost 4 years of experience in FrontEnd development of web pages.",
+        "ParagraphLine2": "Developing web pages without the use of frameworks or libraries has made me realize that I need to learn the use of these tools. Now I have the need to improve the use of ReactJs, in addition to learning frameworks like NextJs, AngularJs or VueJs."
+    },
     "ThemeSwitcher": {
         "CHANGE_THEME": "THEME:",
         "LIGHT": "Light",
@@ -19,6 +23,6 @@
     "Navigation": {
         "MENU_HOME": "Home",
         "MENU_PROJECTS": "Projects",
-        "MENU_CONTACT": "Contact"
+        "MENU_ABOUT": "About me"
     }
 }
