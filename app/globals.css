@@ -19,6 +19,11 @@
   --black: 0, 0, 0;
 }
 
+html,
+body {
+  overflow: hidden;
+}
+
 body {
   background-color: rgb(var(--white));
 }
@@ -27,6 +32,8 @@ body {
   width: calc(100vw - 80px);
   height: calc(100vh - 80px);
   font-family: Neue Montreal;
+  max-height: 100vh;
+  max-height: -webkit-fill-available;
 }
 
 .main-page-title {

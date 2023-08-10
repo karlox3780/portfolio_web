@@ -3,17 +3,34 @@
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { ThemeSwitcher } from './ThemeSwitcher';
 import MenuLang from './MenuLang';
 
 export default function Navigation() {
     const [navbar, setNavbar] = useState(false);
+    const ref = useRef<HTMLButtonElement>(null);
     const t = useTranslations('Navigation')
     const locale = useLocale()
     const currentRoute = usePathname()
     const activeStyle = 'navbar-active'
     const nonActiveStyle = 'navbar-nonactive'
+
+    useEffect(() => {
+        const handleClick = (event: any) => {
+            if (!ref.current?.contains(event.target)) {
+                if (navbar === true) {
+                    setNavbar(false)
+                }
+            }
+        };
+
+        window.addEventListener("mousedown", handleClick);
+
+        return () => {
+            window.removeEventListener("mousedown", handleClick);
+        };
+    }, [ref, navbar])
 
     return (
         <nav className="w-fit md:hidden fixed bottom-[40px]">
@@ -21,10 +38,7 @@ export default function Navigation() {
                 <div>
                     <div className="flex items-center justify-between md:block">
                         <div className="md:hidden">
-                            <button
-                                className="p-2 text-gray-700 outline-none border border-black dark:border-white"
-                                onClick={() => setNavbar(!navbar)}
-                            >
+                            <button className="p-2 text-gray-700 outline-none border border-black dark:border-white" ref={ref} onClick={() => setNavbar(!navbar)}>
                                 {navbar ? (
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -70,6 +84,6 @@ export default function Navigation() {
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav >
     )
 }
