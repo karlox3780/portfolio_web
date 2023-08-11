@@ -19,7 +19,7 @@ export default function Navigation() {
     useEffect(() => {
         const handleClick = (event: any) => {
             if (!ref.current?.contains(event.target)) {
-                if (navbar === true) {
+                if (navbar === true && event.target.type !== '') {
                     setNavbar(false)
                 }
             }
