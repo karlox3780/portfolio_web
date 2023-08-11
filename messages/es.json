@@ -8,6 +8,21 @@
         "ParagraphLine6": "nuevas tecnologías",
         "ParagraphLine7": "y conceptos."
     },
+    "ProjectsPage": {
+        "Title": "PROYECTOS",
+        "GiftyNextJs": {
+            "Title": "Gifty NextJs",
+            "Paragraph": "Aplicación web con diseño adaptado para móvil, que consiste en la venta o compra de regalos de manera sencilla. Un usuario registrado puede, tanto regalar un producto como ser el vendedor de un producto. En la aplicación también podemos realizar: búsqueda por nombre del producto, filtrado y ordenado de productos y añadir a favoritos los productos. Desarrollado con NodeJs, NextJs y CSS3."
+        },
+        "Gifty": {
+            "Title": "Gifty",
+            "Paragraph": "Aplicación web con diseño adaptado para móvil, que consiste en la venta o compra de regalos de manera sencilla. Un usuario registrado puede, tanto regalar un producto como ser el vendedor de un producto. En la aplicación también podemos realizar: búsqueda por nombre del producto, filtrado y ordenado de productos y añadir a favoritos los productos. Desarrollado con NodeJs, ReactJs y CSS3."
+        },
+        "ChicagoArt": {
+            "Title": "Chicago-Art",
+            "Paragraph": "Página web creada usando la API del instituto de arte de Chicago, en la que podemos: ver la lista de obras de arte con paginación, realizar búsquedas por nombre, ver la galería virtual del museo, etc. Además tiene registro y login de usuarios. Un usuario puede agregar obras a sus favoritos, también puede seguir a otros usuarios. Desarrollado con NodeJs, HandleBars y CSS3."
+        }
+    },
     "AboutPage": {
         "ParagraphLine1": "Soy un desarrollador web FullStack con un grado superior de DAM (Desarrollo de Aplicaciones Multiplataforma), con casi 4 años de experiencia en el desarrollo FrontEnd de páginas web.",
         "ParagraphLine2": "Desarrollar páginas web sin el uso de frameworks o librerías, ha hecho que me de cuenta, que necesito aprender el uso de dichas herramientas. Ahora tengo la necesidad de mejorar el uso de ReactJs, además de aprender frameworks como NextJs, AngularJs o VueJs."

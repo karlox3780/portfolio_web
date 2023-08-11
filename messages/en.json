@@ -8,6 +8,21 @@
         "ParagraphLine6": "new technologies",
         "ParagraphLine7": "and concepts."
     },
+    "ProjectsPage": {
+        "Title": "PROJECTS",
+        "GiftyNextJs": {
+            "Title": "Gifty NextJs",
+            "Paragraph": "Web application with a design adapted for mobile, which consists of the sale or purchase of gifts in a simple way. A registered user can either give away a product or be a seller of a product. In the application we can also carry out: search by product name, filtering and ordering of products and adding products to favorites. Developed with NodeJs, NextJs and CSS3."
+        },
+        "Gifty": {
+            "Title": "Gifty",
+            "Paragraph": "Web application with a design adapted for mobile, which consists of the sale or purchase of gifts in a simple way. A registered user can either give away a product or be a seller of a product. In the application we can also carry out: search by product name, filtering and ordering of products and adding products to favorites. Developed with NodeJs, ReactJs and CSS3."
+        },
+        "ChicagoArt": {
+            "Title": "Chicago-Art",
+            "Paragraph": "Web page created using the API of the Art Institute of Chicago, in which we can: see the list of works of art with pagination, perform searches by name, see the museum's virtual gallery, etc. It also has user registration and login. A user can add works to his favorites, he can also follow other users. Developed with NodeJs, HandleBars and CSS3."
+        }
+    },
     "AboutPage": {
         "ParagraphLine1": "I am a FullStack web developer with a higher degree of DAM (Cross Platform Application Development), with almost 4 years of experience in FrontEnd development of web pages.",
         "ParagraphLine2": "Developing web pages without the use of frameworks or libraries has made me realize that I need to learn the use of these tools. Now I have the need to improve the use of ReactJs, in addition to learning frameworks like NextJs, AngularJs or VueJs."
