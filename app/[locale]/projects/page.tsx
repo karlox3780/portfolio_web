@@ -1,3 +1,5 @@
+import DemoButton from "@/app/components/ProjectButtons/DemoButton"
+import GithubButton from "@/app/components/ProjectButtons/GithubButton"
 import Css3Icon from "@/app/components/TecnologyIcons/Css3Icon"
 import HandleBarsIcon from "@/app/components/TecnologyIcons/HandleBarsIcon"
 import NextJsIcon from "@/app/components/TecnologyIcons/NextJsIcon"
@@ -20,8 +22,8 @@ export default function Projects() {
                 </div>
                 <p>{t("GiftyNextJs.Paragraph")}</p>
                 <div className="flex justify-center mt-[10px] max-md:flex-col">
-                    <a className="w-fit border border-black text-center font-bold p-[5px] mr-[10px] duration-200 dark:border-white dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white max-md:w-[100%] max-md:mr-[0px]" href="https://gifty-next-js.vercel.app/" target="_blank">Demo</a>
-                    <a className="w-fit border border-black text-center font-bold p-[5px] duration-200 dark:border-white dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white max-md:w-[100%] max-md:mt-[10px]" href="https://github.com/Daniel-Fiat/Gifty-NextJs" target="_blank">Github</a>
+                    <DemoButton href="https://gifty-next-js.vercel.app/" />
+                    <GithubButton href="https://github.com/Daniel-Fiat/Gifty-NextJs" />
                 </div>
             </div>
             <div className="w-[50%] mt-[20px] max-lg:w-[90%] max-md:w-[100%]">
@@ -33,8 +35,8 @@ export default function Projects() {
                 </div>
                 <p>{t("Gifty.Paragraph")}</p>
                 <div className="flex justify-center mt-[10px] max-md:flex-col">
-                    <a className="w-fit border border-black text-center font-bold p-[5px] mr-[10px] duration-200 dark:border-white dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white max-md:w-[100%] max-md:mr-[0px]" href="https://gifty-seven.vercel.app/" target="_blank">Demo</a>
-                    <a className="w-fit border border-black text-center font-bold p-[5px] duration-200 dark:border-white dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white max-md:w-[100%] max-md:mt-[10px]" href="https://github.com/Daniel-Fiat/Gifty_client" target="_blank">Github</a>
+                    <DemoButton href="https://gifty-seven.vercel.app/" />
+                    <GithubButton href="https://github.com/Daniel-Fiat/Gifty_client" />
                 </div>
             </div>
             <div className="w-[50%] mt-[20px] max-lg:w-[90%] max-md:w-[100%]">
@@ -46,8 +48,8 @@ export default function Projects() {
                 </div>
                 <p>{t("ChicagoArt.Paragraph")}</p>
                 <div className="flex justify-center mt-[10px] max-md:flex-col">
-                    <a className="w-fit border border-black text-center font-bold p-[5px] mr-[10px] duration-200 dark:border-white dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white max-md:w-[100%] max-md:mr-[0px]" href="https://chicago-art-page.vercel.app/" target="_blank">Demo</a>
-                    <a className="w-fit border border-black text-center font-bold p-[5px] duration-200 dark:border-white dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white max-md:w-[100%] max-md:mt-[10px]" href="https://github.com/hongen1993/ChicagoArt" target="_blank">Github</a>
+                    <DemoButton href="https://chicago-art-page.vercel.app/" />
+                    <GithubButton href="https://github.com/hongen1993/ChicagoArt" />
                 </div>
             </div>
         </div>
