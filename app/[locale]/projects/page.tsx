@@ -11,7 +11,7 @@ export default function Projects() {
     const t = useTranslations('ProjectsPage')
 
     return (
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center animate-fade-down">
             <h1 className="font-bold text-[26px] mr-[5px]">{t("Title")}</h1>
             <div className="w-[50%] mt-[20px] max-lg:w-[90%] max-md:w-[100%]">
                 <div className="flex items-center justify-center">
