@@ -1,6 +1,6 @@
 export default function SocialButtons() {
     return (
-        <div className="flex mt-[5px] max-md:mb-[5px]">
+        <div className="flex mt-[5px] max-md:mb-[5px] animate-fade">
             <a className="block w-[30px] mr-[5px] hover:scale-110 duration-200" href="https://github.com/karlox3780" target="_blank">
                 <svg className="fill-black dark:fill-white" viewBox="-143 145 512 512">
                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>

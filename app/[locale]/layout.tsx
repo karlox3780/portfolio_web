@@ -38,8 +38,8 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
             <main className="main-page-container border border-black dark:border-white m-[40px] p-[40px]">
-              <h1 className="main-page-title">Carlos Bustos</h1>
-              <p className="main-page-description tracking-wider">Front End Developer</p>
+              <h1 className="main-page-title animate-fade">Carlos Bustos</h1>
+              <p className="main-page-description tracking-wider animate-fade">Front End Developer</p>
               <SocialButtons />
               <div className='md:block max-md:hidden'>
                 <ThemeSwitcher />

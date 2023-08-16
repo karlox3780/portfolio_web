@@ -20,7 +20,7 @@ export default function Projects() {
                     <NextJsIcon className="w-[30px] fill-black dark:fill-white" />
                     <Css3Icon className="w-[30px] fill-black dark:fill-white" />
                 </div>
-                <p>{t("GiftyNextJs.Paragraph")}</p>
+                <p className="text-[18px]">{t("GiftyNextJs.Paragraph")}</p>
                 <div className="flex justify-center mt-[10px] max-md:flex-col">
                     <DemoButton href="https://gifty-next-js.vercel.app/" />
                     <GithubButton href="https://github.com/Daniel-Fiat/Gifty-NextJs" />
@@ -33,7 +33,7 @@ export default function Projects() {
                     <ReactJsIcon className="w-[30px] fill-black dark:fill-white" />
                     <Css3Icon className="w-[30px] fill-black dark:fill-white" />
                 </div>
-                <p>{t("Gifty.Paragraph")}</p>
+                <p className="text-[18px]">{t("Gifty.Paragraph")}</p>
                 <div className="flex justify-center mt-[10px] max-md:flex-col">
                     <DemoButton href="https://gifty-seven.vercel.app/" />
                     <GithubButton href="https://github.com/Daniel-Fiat/Gifty_client" />
@@ -46,7 +46,7 @@ export default function Projects() {
                     <HandleBarsIcon className="w-[30px] fill-black dark:fill-white" />
                     <Css3Icon className="w-[30px] fill-black dark:fill-white" />
                 </div>
-                <p>{t("ChicagoArt.Paragraph")}</p>
+                <p className="text-[18px]">{t("ChicagoArt.Paragraph")}</p>
                 <div className="flex justify-center mt-[10px] max-md:flex-col">
                     <DemoButton href="https://chicago-art-page.vercel.app/" />
                     <GithubButton href="https://github.com/hongen1993/ChicagoArt" />

@@ -4,7 +4,7 @@ export default function Home() {
     const t = useTranslations('HomePage')
 
     return (
-        <div className="absolute flex flex-col font-bold text-[18px] bottom-0 right-0 max-md:static max-md:mt-[10px]">
+        <div className="absolute flex flex-col font-bold text-[18px] bottom-0 right-0 max-md:static max-md:mt-[10px] animate-fade-left">
             <span>{t("ParagraphLine1")}</span>
             <span>{t("ParagraphLine2")}</span>
             <span>{t("ParagraphLine3")}</span>

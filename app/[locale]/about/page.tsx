@@ -7,10 +7,10 @@ export default function About() {
 
     return (
         <>
-            <div className='flex justify-center'>
+            <div className='flex justify-center animate-fade-down'>
                 <Image className='w-[200px] rounded-[50%] hover:translate-y-[10px] duration-200' src={profilePhoto} alt="Foto de perfil" priority />
             </div>
-            <div className='flex flex-col items-center text-[20px]'>
+            <div className='flex flex-col items-center text-[20px] animate-fade-down'>
                 <p className='mt-[20px] w-[50%] max-lg:w-[90%] max-md:w-[100%]'>
                     {t("ParagraphLine1")}
                 </p>

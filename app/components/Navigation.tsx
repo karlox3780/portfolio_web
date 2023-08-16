@@ -12,7 +12,7 @@ export default function Navigation() {
     const nonActiveStyle = 'navbar-nonactive'
 
     return (
-        <ul className="main-page-navbar">
+        <ul className="main-page-navbar animate-fade">
             <li><Link href={"/" + locale + "/home"} className={currentRoute?.includes("/home") ? activeStyle : nonActiveStyle}>{t("MENU_HOME")}</Link></li>
             <li><Link href={"/" + locale + "/projects"} className={currentRoute?.includes("/projects") ? activeStyle : nonActiveStyle}>{t("MENU_PROJECTS")}</Link></li>
             <li><Link href={"/" + locale + "/about"} className={currentRoute?.includes("/about") ? activeStyle : nonActiveStyle}>{t("MENU_ABOUT")}</Link></li>
