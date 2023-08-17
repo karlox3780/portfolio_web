@@ -47,7 +47,6 @@ export default async function LocaleLayout({
               </div>
               <MenuResponsive></MenuResponsive>
             </main>
-
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
