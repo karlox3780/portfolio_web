@@ -2,6 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--black) var(--white);
+}
+
+.dark * {
+  scrollbar-width: thin;
+  scrollbar-color: var(--white) var(--black);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+.dark *::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+}
+
+.dark *::-webkit-scrollbar-thumb {
+  background: var(--white);
+}
+
 @font-face {
   font-family: Neue Montreal;
   src: url(../asset/fonts/NeueMontreal/NeueMontreal-Light.otf);
@@ -12,11 +49,6 @@
   font-family: Neue Montreal;
   src: url(../asset/fonts/NeueMontreal/NeueMontreal-Bold.otf);
   font-weight: bold;
-}
-
-:root {
-  --white: 255, 255, 255;
-  --black: 0, 0, 0;
 }
 
 html,
