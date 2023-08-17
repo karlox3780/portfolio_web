@@ -3,13 +3,13 @@ const withNextIntl = require('next-intl/plugin')(
 );
 
 module.exports = withNextIntl({
-    async redirects() {
-        return [
-            {
-                source: '/',
-                destination: '/projects',
-                permanent: true,
-            },
-        ]
-    }
+    // async redirects() {
+    //     return [
+    //         {
+    //             source: '/',
+    //             destination: '/projects',
+    //             permanent: true,
+    //         },
+    //     ]
+    // }
 });
