@@ -14,10 +14,6 @@ export const metadata: Metadata = {
   title: 'Carlos Bustos Portfolio'
 }
 
-export function generateStaticParams() {
-  return [{ locale: 'es' }, { locale: 'en' }];
-}
-
 export default async function LocaleLayout({
   children, params: { locale }
 }: {
