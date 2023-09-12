@@ -54,7 +54,7 @@ export default function Navigation() {
                 </div>
                 <div>
                     <div>
-                        <ul className={`main-page-navbar ${navbar ? 'block' : 'hidden'} border border-black bg-white animate-fade dark:bg-black dark:border-white`}>
+                        <ul onClick={() => setNavbar(!navbar)} className={`main-page-navbar ${navbar ? 'block' : 'hidden'} border border-black bg-white animate-fade dark:bg-black dark:border-white`}>
                             <li><ThemeSwitcher /></li>
                             <li><MenuLang /></li>
                             <li><Link href={"/" + locale + "/home"} className={currentRoute?.includes("/home") ? activeStyle : nonActiveStyle}>{t("MENU_HOME")}</Link></li>
