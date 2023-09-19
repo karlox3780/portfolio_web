@@ -10,6 +10,10 @@
     },
     "ProjectsPage": {
         "Title": "PROYECTOS",
+        "Cinema": {
+            "Title": "Cinema",
+            "Paragraph": "Página web con diseño maquetado con TailwindCSS, obtiene los datos de las películas a través de la API de 'themoviedb'. Consta de una página principal donde se muestran las películas actuales y más populares, además de otra página de búsqueda por nombre. Tanto las películas como el reparto tienen su página de detalle. Desarrollado con Angular y CSS3."
+        },
         "GiftyNextJs": {
             "Title": "Gifty NextJs",
             "Paragraph": "Aplicación web con diseño adaptado para móvil, que consiste en la venta o compra de regalos de manera sencilla. Un usuario registrado puede, tanto regalar un producto como ser el vendedor de un producto. En la aplicación también podemos realizar: búsqueda por nombre del producto, filtrado y ordenado de productos y añadir a favoritos los productos. Desarrollado con NodeJs, NextJs y CSS3."

@@ -10,6 +10,10 @@
     },
     "ProjectsPage": {
         "Title": "PROJECTS",
+        "Cinema": {
+            "Title": "Cinema",
+            "Paragraph": "Website with TailwindCSS layout, obtains movie data through the 'themoviedb' API. It consists of a main page where the current and most popular movies are displayed, as well as another search page by name. Both the films and the cast have their detail page. Developed with Angular and CSS3."
+        },
         "GiftyNextJs": {
             "Title": "Gifty NextJs",
             "Paragraph": "Web application with a design adapted for mobile, which consists of the sale or purchase of gifts in a simple way. A registered user can either give away a product or be a seller of a product. In the application we can also carry out: search by product name, filtering and ordering of products and adding products to favorites. Developed with NodeJs, NextJs and CSS3."
